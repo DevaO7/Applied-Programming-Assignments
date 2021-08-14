@@ -1,0 +1,12 @@
+#Q4
+X = sp.lti([1,0,2],[1,0,3,0]) #X(s)
+t,x = sp.impulse(X,None,linspace(0,20,5001)) # x is x(t)
+plt.plot(t,x,label = 'x(t)')
+Y = sp.lti(2,[1,0,3,0]) #Y(s)
+t,y = sp.impulse(Y,None,linspace(0,20,5001)) # y is y(t)
+plt.plot(t,y,label = 'y(t)',color = 'y')
+plt.legend()
+plt.xlabel('Time')
+plt.ylabel('x(t)/y(t)')
+plt.title('Solution of the Coupled Spring Problem')
+plt.show()

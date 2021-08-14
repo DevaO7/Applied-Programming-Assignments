@@ -1,0 +1,17 @@
+space = np.linspace(0, m.pi*2, 401)
+# The fucntion takes in a vector and returns a coscos() of the vector
+f1x = vecCoscos(space)
+plot(space, f1x)  # Plot for coscos()
+title('cos(cos(x)) - Orginal Plot')
+xlabel('x')
+ylabel('cos(cos(x))')
+grid()
+show()
+# The fucntion takes in a vector and returns a exp() of the vector
+f2x = vecExp(space)
+semilogy(space, f2x)  # Semilogy plot for exp()
+title('exp(x) - Orginal Plot')
+xlabel('x')
+ylabel('exp(x)')
+grid()
+show()
